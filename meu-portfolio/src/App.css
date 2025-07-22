@@ -46,12 +46,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
   background-color: #8A2BE2;
-  z-index: 9999;
-  animation: hideLoader 1.5s forwards;
-  animation-delay: 0.5s;
+  z-index: 0;
+  animation: hideLoader 2.5s forwards;
+  animation-delay: 0.0s;
+  margin-left: 45px;
 }
 
 @keyframes hideLoader {
