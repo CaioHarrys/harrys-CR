@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Sidebar = () => {
   // O container principal agora ocupa 100% da altura do painel pai
   return (
-    <div className="sidebar-container text-center" style={{ height: '100%' }}>
+    <div className="sidebar-container text-center">
       {/* ... o restante do seu código da sidebar ... */}
       <Image src={profileImage} roundedCircle className="profile-image" />
       <h3 className="mt-3">Caio Harrys</h3>
