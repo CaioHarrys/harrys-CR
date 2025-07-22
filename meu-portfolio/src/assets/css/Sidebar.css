@@ -1,0 +1,48 @@
+/* Centraliza todo o conteúdo da sidebar e a fixa */
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+/* Estilo da Imagem de Perfil */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #e0e0e0;
+    object-fit: cover; /* Garante que a imagem não fique distorcida */
+}
+
+/* Ícones de Redes Sociais */
+.social-icon {
+    margin: 0 15px;
+    color: #555; /* Cor padrão dos ícones */
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Cor ao passar o mouse (azul do bootstrap) */
+}
+
+/* Menu de Navegação Principal */
+.main-nav .nav-link {
+    color: #333;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.main-nav .nav-link:hover {
+    color: #007bff;
+    transform: scale(1.05); /* Efeito de zoom sutil */
+}
+
+/* Rodapé da Sidebar - usa flexbox para empurrá-lo para baixo */
+.sidebar-footer {
+    margin-top: auto; /* Mágica do flexbox para empurrar para o final */
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
