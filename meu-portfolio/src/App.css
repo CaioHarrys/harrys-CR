@@ -34,7 +34,6 @@
 /* === PAINEL DA DIREITA (CONTEÚDO) === */
 .main-content-container {
   width: 100%;
-  max-width: 660px;
   padding: 40px;
   /* CRUCIAL: CONTROLE DO SCROLL */
   overflow-y: auto; /* Adiciona scroll APENAS neste painel se o conteúdo for maior */

@@ -12,7 +12,7 @@ function App() {
       <div className="animated-shape shape2"></div>
 
       {/* PAINEL DA ESQUERDA (SIDEBAR) */}
-      <div>
+      <div className="col-3">
         <Sidebar />
       </div>
 
