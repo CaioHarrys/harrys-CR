@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import Sidebar from './components/Sidebar';
 import Home from './components/sections/Home';
 import './App.css';
@@ -12,32 +11,15 @@ function App() {
       <div className="animated-shape shape1"></div>
       <div className="animated-shape shape2"></div>
 
-      {/* ESTE É O NOVO CONTÊINER PRINCIPAL QUE FALTAVA */}
-      <div className="main-container">
-        <Container fluid className="h-100">
-          <Row className="h-100">
-            {/* Coluna da Esquerda (Sidebar) */}
-            <Col
-              xs={12}
-              md={5}
-              lg={4}
-              className="sidebar-col" // Classe para estilização
-            >
-              <Sidebar />
-            </Col>
+      {/* PAINEL DA ESQUERDA (SIDEBAR) */}
+      <div className="sidebar-container">
+        <Sidebar />
+      </div>
 
-            {/* Coluna da Direita (Conteúdo Principal) */}
-            <Col
-              xs={12}
-              md={7}
-              lg={8}
-              className="main-content-col" // Classe para estilização
-            >
-              <Home />
-              {/* Futuras seções virão aqui */}
-            </Col>
-          </Row>
-        </Container>
+      {/* PAINEL DA DIREITA (CONTEÚDO PRINCIPAL) */}
+      <div className="main-content-container">
+        <Home />
+        {/* Futuras seções como Sobre, Portfólio, etc., virão aqui dentro */}
       </div>
     </div>
   );

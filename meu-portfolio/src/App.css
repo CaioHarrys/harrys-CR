@@ -1,44 +1,48 @@
 /* === ESTRUTURA GLOBAL E FUNDO === */
 .app-wrapper {
-  /* Usamos flexbox para centralizar nosso card principal na tela */
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 50px 15px; /* Espaçamento para o card não colar nas bordas em telas pequenas */
-  background-color: #f7f7f7; /* O fundo cinza claro do site original */
+  padding: 50px 15px;
+  background-color: #f7f7f7;
   overflow: hidden;
   position: relative;
+  gap: 40px; /* IMPORTANTE: O espaçamento entre os dois contêineres */
 }
 
-/* === O "CARD" PRINCIPAL === */
-.main-container {
-  width: 100%;
-  max-width: 1040px; /* Largura máxima do container como no original */
-  height: 80vh;      /* Altura do container, pode ser ajustada */
-  max-height: 700px; /* Altura máxima */
+/* === ESTILO INDIVIDUAL DOS PAINÉIS === */
+.sidebar-container,
+.main-content-container {
+  height: 85vh;
+  max-height: 700px;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border: 1px solid #e0e0e0;
-  position: relative; /* Para os z-index funcionarem */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9e9e9;
+  position: relative;
   z-index: 2;
-  display: flex; /* Para que as colunas dentro dele se comportem bem */
 }
 
-/* === COLUNAS INTERNAS === */
-.sidebar-col {
-  /* A sidebar agora tem uma borda à direita */
-  border-right: 1px solid #e0e0e0;
+/* === PAINEL DA ESQUERDA (SIDEBAR) === */
+.sidebar-container {
+  width: 100%;
+  max-width: 380px;
+  padding: 40px;
 }
 
-.main-content-col {
-  /* Permite scroll apenas no conteúdo da direita se ele for muito grande */
-  overflow-y: auto;
+/* === PAINEL DA DIREITA (CONTEÚDO) === */
+.main-content-container {
+  width: 100%;
+  max-width: 660px;
+  padding: 40px;
+  /* CRUCIAL: CONTROLE DO SCROLL */
+  overflow-y: auto; /* Adiciona scroll APENAS neste painel se o conteúdo for maior */
 }
 
 
 /* === ANIMAÇÃO DE INTRODUÇÃO (A "CORTINA") === */
+/* ... (O restante do CSS para as animações continua o mesmo) ... */
 .intro-loader {
   position: fixed;
   top: 0;
@@ -61,20 +65,20 @@
   position: fixed;
   border-radius: 50%;
   filter: blur(80px);
-  z-index: 1; /* Fica atrás do .main-container */
+  z-index: 1;
 }
 
 .shape1 {
   width: 400px;
   height: 400px;
-  background-color: rgba(168, 85, 247, 0.3); /* Opacidade reduzida para sutileza */
+  background-color: rgba(168, 85, 247, 0.3);
   animation: moveShape1 25s infinite alternate;
 }
 
 .shape2 {
   width: 350px;
   height: 350px;
-  background-color: rgba(74, 222, 128, 0.3); /* Opacidade reduzida */
+  background-color: rgba(74, 222, 128, 0.3);
   animation: moveShape2 30s infinite alternate;
 }
 
