@@ -21,8 +21,11 @@ const Sidebar = () => {
       </h3>
       <div className="Card-about jost-font">
         <p>
-          I'm a passionate front-end web developer who excels at creating
-          pixel-perfect web interfaces. I’m available for a freelance job.
+          Desenvolvedor <span className="blue-c">Full-Stack</span> apaixonado e
+          especialista em criar interfaces profissionais e modernas. Sei
+          programar IAs utilizando Python+Venv para analise de dados, chatbots,
+          treinamento de IA. Disponível para trabalhos como freelancer, CLT e ou
+          PJ. Let's code 🔥
         </p>
       </div>
       <div className="about-lista ">
