@@ -55,8 +55,8 @@ const Sidebar = () => {
       </div>
       <footer className="sidebar-footer">
         <p>
-          &copy; {new Date().getFullYear()}
           <br /> Feito com 💙 por Caio Harrys <br />.
+          &copy; {new Date().getFullYear()}
         </p>
       </footer>
     </div>
