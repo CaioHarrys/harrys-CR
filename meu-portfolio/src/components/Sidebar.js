@@ -1,9 +1,8 @@
 import React from "react";
-import { Image, Nav } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import profileImage from "../assets/img/profile.jpg";
 import "../assets/css/Sidebar.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { MdLocalPostOffice } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
 
