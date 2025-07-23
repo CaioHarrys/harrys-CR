@@ -15,7 +15,7 @@
   justify-content: center;
   min-height: 100vh;
   padding: 50px 15px;
-  background-color: #f7f7f7;
+  background-color: #eee;
   overflow: hidden;
   position: relative;
   gap: 40px;
@@ -32,7 +32,7 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   border: 1px solid #e9e9e9;
   position: relative;
-  z-index: 2;
+  z-index: 20;
 }
 
 /* === PAINEL DA ESQUERDA (SIDEBAR) === */
@@ -56,15 +56,85 @@
 /* ... (O restante do CSS para as animações continua o mesmo) ... */
 .intro-loader {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 120%;
+  top: -100vh;
+  left: -110vh;
+  width: 200%;
   height: 100%;
-  background-color: #8A2BE2;
-  z-index: 0;
-  animation: hideLoader 0.9s forwards ease-in;
-  animation-delay: 0.0s;
-  margin-left: 40px;
+  background-color: #1374F2;
+  z-index: 4;
+  animation: hideLoader 1s forwards ease-in-out !important;
+  animation-delay: -0.1s;
+  margin-left: 20px;
+  transform: rotate(-45deg) !important;
+}
+
+.intro-loader-s {
+  position: fixed;
+  top: 100vh;
+  left: -110vh;
+  width: 100%;
+  height: 100%;
+  background-color: #1374F2;
+  z-index: 5;
+  animation: hideLoader 1s forwards ease-in-out;
+  animation-delay: -0.1s;
+  margin-left: 20px;
+  transform: rotate(-45deg) !important;
+}
+
+.intro-loader-2 {
+  position: fixed;
+  top: -100vh;
+  left: -100vh;
+  width: 200%;
+  height: 100%;
+  animation: hideLoader 1s forwards ease-in-out;
+  animation-delay: -0.1s;
+  background-color: #3084F2 !important;
+  margin-left: 0px !important;
+  z-index: 3;
+  transform: rotate(-45deg) !important;
+}
+
+.intro-loader-2-s {
+  position: fixed;
+  top: 100vh;
+  left: -100vh;
+  width: 100%;
+  height: 100%;
+  animation: hideLoader 1s forwards ease-in-out;
+  animation-delay: -0.1s;
+  background-color: #3084F2 !important;
+  margin-left: 0px !important;
+  z-index: 3;
+  transform: rotate(-45deg) !important;
+}
+
+.intro-loader-3 {
+  position: fixed;
+  top: -100vh;
+  left: -100vh;
+  width: 200%;
+  height: 100%;
+  animation: hideLoader 1s forwards ease-in-out;
+  animation-delay: -0.1s;
+  background-color: #a0b2c9 !important;
+  margin-left: 10px !important;
+  z-index: 2;
+  transform: rotate(-45deg) !important;
+}
+.intro-loader-3-s {
+  position: fixed;
+  top: 100vh;
+  left: -100vh;
+  width: 100%;
+  height: 100%;
+  animation: hideLoader 1s forwards ease-in-out;
+  animation-delay: -0.1s;
+  background-color: #a0b2c9 !important;
+  margin-left: 10px !important;
+  z-index: 2;
+  transform: rotate(-45deg) !important;
 }
 
 @keyframes hideLoader {
