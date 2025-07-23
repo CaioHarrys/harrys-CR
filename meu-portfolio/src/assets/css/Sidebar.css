@@ -143,3 +143,14 @@ h3{
     font-weight: 700 !important;
     font-style: normal;
   }
+.fade-in{
+    animation: fadeIn 1s ease-in-out !important;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}

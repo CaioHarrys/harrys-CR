@@ -18,7 +18,8 @@
   background-color: #f7f7f7;
   overflow: hidden;
   position: relative;
-  gap: 40px; /* IMPORTANTE: O espaçamento entre os dois contêineres */
+  gap: 40px;
+  /* IMPORTANTE: O espaçamento entre os dois contêineres */
 }
 
 /* === ESTILO INDIVIDUAL DOS PAINÉIS === */
@@ -46,7 +47,8 @@
   width: 100%;
   padding: 40px;
   /* CRUCIAL: CONTROLE DO SCROLL */
-  overflow-y: auto; /* Adiciona scroll APENAS neste painel se o conteúdo for maior */
+  overflow-y: auto;
+  /* Adiciona scroll APENAS neste painel se o conteúdo for maior */
 }
 
 
@@ -56,18 +58,23 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 200%;
+  width: 120%;
   height: 100%;
   background-color: #8A2BE2;
   z-index: 0;
-  animation: hideLoader 2.5s forwards;
+  animation: hideLoader 0.9s forwards ease-in;
   animation-delay: 0.0s;
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 @keyframes hideLoader {
-  from { transform: translateX(0%); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* === BOLHAS DE FUNDO ANIMADAS === */
@@ -93,11 +100,35 @@
 }
 
 @keyframes moveShape1 {
-  from { transform: translate(10vw, -20vh) rotate(0deg); }
-  to { transform: translate(60vw, 40vh) rotate(360deg); }
+  from {
+    transform: translate(10vw, -20vh) rotate(0deg);
+  }
+
+  to {
+    transform: translate(60vw, 40vh) rotate(360deg);
+  }
 }
 
 @keyframes moveShape2 {
-  from { transform: translate(70vw, 80vh) rotate(0deg); }
-  to { transform: translate(20vw, 10vh) rotate(-360deg); }
+  from {
+    transform: translate(70vw, 80vh) rotate(0deg);
+  }
+
+  to {
+    transform: translate(20vw, 10vh) rotate(-360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
 }

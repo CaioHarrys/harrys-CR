@@ -13,9 +13,9 @@ const blue = {
 const Sidebar = () => {
   // O container principal agora ocupa 100% da altura do painel pai
   return (
-    <div className="sidebar-container text-center">
+    <div className="sidebar-container text-center fade-in">
       {/* ... o restante do seu código da sidebar ... */}
-      <Image src={profileImage} roundedCircle className="profile-image"/>
+      <Image src={profileImage} roundedCircle className="profile-image" />
       <h3 className="mt-3 align-self-lg-start jost-font-name name-side-bar">
         <span className="blue-c">CAIO</span> HARRYS
       </h3>
@@ -54,8 +54,8 @@ const Sidebar = () => {
       </div>
       <footer className="sidebar-footer">
         <p>
-          <br /> Feito com 💙 por Caio Harrys <br />.
-          &copy; {new Date().getFullYear()}
+          <br /> Feito com 💙 por Caio Harrys <br />. &copy;{" "}
+          {new Date().getFullYear()}
         </p>
       </footer>
     </div>
