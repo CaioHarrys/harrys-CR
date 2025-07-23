@@ -59,9 +59,7 @@
 
 /* Rodapé da Sidebar - usa flexbox para empurrá-lo para baixo */
 .sidebar-footer {
-    margin-top: auto;
     /* Mágica do flexbox para empurrar para o final */
-    padding-top: 20px;
     font-size: 0.8rem;
     color: #888;
 }
