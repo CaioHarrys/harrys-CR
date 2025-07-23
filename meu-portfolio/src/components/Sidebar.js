@@ -3,56 +3,54 @@ import { Image, Nav } from "react-bootstrap";
 import profileImage from "../assets/img/profile.jpg";
 import "../assets/css/Sidebar.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { MdLocalPostOffice } from "react-icons/md";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoMail } from "react-icons/io5";
+
+const blue = {
+  color: "#007bff",
+};
 
 const Sidebar = () => {
   // O container principal agora ocupa 100% da altura do painel pai
   return (
     <div className="sidebar-container text-center">
       {/* ... o restante do seu código da sidebar ... */}
-      <Image src={profileImage} roundedCircle className="profile-image" />
-      <h3 className="mt-3">
-        <span className="blue-c">Caio</span> Harrys
+      <Image src={profileImage} roundedCircle className="profile-image"/>
+      <h3 className="mt-3 align-self-lg-start jost-font-name name-side-bar">
+        <span className="blue-c">CAIO</span> HARRYS
       </h3>
-      <p className="text-muted">
-        Desenvolvedor <span className="blue-c">Full-Stack</span>
-      </p>
-      <div className="Card-about">
+      <div className="Card-about jost-font">
         <p>
           I'm a passionate front-end web developer who excels at creating
           pixel-perfect web interfaces. I’m available for a freelance job.
         </p>
       </div>
-      <div className="about-lista">
-        <ul>
+      <div className="about-lista ">
+        <ul className="list-side-bar jost-font">
           <li>
-            <a href="#github" className="social-icon">
-              <FaGithub size={20} />
+            <a href="#numero" className="social-icon">
+              <BsFillTelephoneFill size={22} style={blue} />
             </a>
-            <p>Endereço</p>
+            <p>(61) 99211-9889</p>
           </li>
           <li>
             <a href="#github" className="social-icon">
-              <FaGithub size={20} />
+              <IoMail size={25} style={blue} />
             </a>
-            <p>Endereço</p>
-          </li>
-          <li>
-            <a href="#github" className="social-icon">
-              <FaGithub size={20} />
-            </a>
-            <p>Endereço</p>
+            <p>caiocompanyhc@gmail.com</p>
           </li>
         </ul>
       </div>
       <div className="social-icons my-4">
         <a href="#github" className="social-icon">
-          <FaGithub size={20} />
+          <FaGithub size={25} />
         </a>
         <a href="#linkedin" className="social-icon">
-          <FaLinkedin size={20} />
+          <FaLinkedin size={25} />
         </a>
         <a href="#email" className="social-icon">
-          <FaEnvelope size={20} />
+          <FaEnvelope size={25} />
         </a>
       </div>
       <footer className="sidebar-footer">
