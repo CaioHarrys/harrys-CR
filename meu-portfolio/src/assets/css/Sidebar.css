@@ -92,6 +92,7 @@ ul {
     flex-direction: column;
     width: 100% !important;
     gap: 5px;
+    overflow-x: auto;
 }
 .list-side-bar li {
     display: flex;
