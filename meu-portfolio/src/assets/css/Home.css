@@ -37,6 +37,13 @@
     margin-bottom: 0;
     color: #666;
   }
+  .home-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
   
   .about-image-container {
     position: relative;

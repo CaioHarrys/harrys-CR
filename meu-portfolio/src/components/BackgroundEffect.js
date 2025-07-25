@@ -11,7 +11,7 @@ const BackgroundEffect = () => {
     const particle = document.createElement('div');
     particle.className = 'particle';
 
-    const size = Math.random() * 3 + 1;
+    const size = Math.random() * 9 + 1;
     particle.style.width = `${size}px`;
     particle.style.height = `${size}px`;
 
@@ -145,9 +145,12 @@ const BackgroundEffect = () => {
 
   return (
     <div className="gradient-background-container">
+      <div className="particles-container" id="particles-container" ref={particlesContainerRef}></div>
       <div className="gradient-sphere sphere-1" ref={el => spheresRef.current[0] = el}></div>
       <div className="gradient-sphere sphere-2" ref={el => spheresRef.current[1] = el}></div>
       <div className="gradient-sphere sphere-3" ref={el => spheresRef.current[2] = el}></div>
+      <div className="gradient-sphere sphere-4" ref={el => spheresRef.current[2] = el}></div>
+      <div className="gradient-sphere sphere-5" ref={el => spheresRef.current[2] = el}></div>
       <div className="glow"></div>
       <div className="grid-overlay"></div>
       <div className="noise-overlay"></div>
