@@ -1,4 +1,5 @@
 import React from 'react';
+import "../../assets/css/About.css";
 import { Container, Button } from 'react-bootstrap';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -6,7 +7,7 @@ const Home = () => {
   return (
     // A seção ocupa no MÍNIMO 100% da altura do painel direito
     <section id="home" style={{ display: 'flex', alignItems: 'center', minHeight: '100%' }}>
-      <Container className="p-0"> {/* Removido padding do container do bootstrap */}
+      <Container className="p-0 fade-in"> {/* Removido padding do container do bootstrap */}
         <p className="text-muted mb-1">Olá, eu sou</p>
         <h1 style={{ fontSize: '3.5rem', fontWeight: '800', color: '#111' }}>
           Caio Harrys

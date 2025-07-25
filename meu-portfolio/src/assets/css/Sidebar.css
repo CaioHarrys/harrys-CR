@@ -29,7 +29,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: row !important;
-    gap: 10px;
+    gap: 5px;
 }
 .social-icons a {
     background-color: #eee !important;
@@ -91,7 +91,8 @@ ul {
     justify-content: space-evenly;
     flex-direction: column;
     width: 100% !important;
-    gap: 10px;
+    gap: 5px;
+    overflow-x: auto;
 }
 .list-side-bar li {
     display: flex;
@@ -143,3 +144,14 @@ h3{
     font-weight: 700 !important;
     font-style: normal;
   }
+.fade-in{
+    animation: fadeIn 1s ease-in-out !important;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}

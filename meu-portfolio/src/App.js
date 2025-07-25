@@ -8,8 +8,13 @@ function App() {
     <div className="app-wrapper">
       {/* EFEITOS DE FUNDO */}
       <div className="intro-loader"></div>
-      <div className="animated-shape shape1"></div>
-      <div className="animated-shape shape2"></div>
+      <div className="intro-loader-s"></div>
+      <div className="intro-loader-2"></div>
+      <div className="intro-loader-2-s"></div>
+      <div className="intro-loader-3"></div>
+      <div className="intro-loader-3-s"></div>
+      {/* <div className="animated-shape shape1"></div>
+      <div className="animated-shape shape2"></div> */}
 
       {/* PAINEL DA ESQUERDA (SIDEBAR) */}
       <div className="col-3">
@@ -17,7 +22,7 @@ function App() {
       </div>
 
       {/* PAINEL DA DIREITA (CONTEÚDO PRINCIPAL) */}
-      <div className="main-content-container">
+      <div className="main-content-container fade-in">
         <Home />
         {/* Futuras seções como Sobre, Portfólio, etc., virão aqui dentro */}
       </div>
