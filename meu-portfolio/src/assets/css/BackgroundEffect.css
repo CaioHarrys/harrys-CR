@@ -9,16 +9,15 @@
    pois o React gerencia o layout do seu aplicativo.
    Apenas os estilos relacionados ao background serão relevantes para este componente. */
 
-.gradient-background-container { /* Renomeado para evitar conflito com classe em Home.js */
+.gradient-background-container {
+    display: flex;
     position: absolute; /* Ou relative, dependendo de como você quer posicionar no Home.js */
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     margin: 0px !important;
-    padding: 0px !important;
-    height: 100vh;
-    z-index: 1; /* Garante que fique atrás do conteúdo */
-    overflow: hidden;
+    height: 100%;
+    z-index: 3; /* Garante que fique atrás do conteúdo */
     /* Ajuste para que o background preencha o container direito */
     pointer-events: none; /* Permite interações de mouse com elementos subjacentes se necessário */
 }
@@ -153,4 +152,7 @@
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
+}
+.gradient-background{
+    z-index: 12;
 }

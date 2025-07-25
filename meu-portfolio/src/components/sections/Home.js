@@ -7,48 +7,41 @@ import BackgroundEffect from "../BackgroundEffect"; // Importa o novo componente
 
 const Home = () => {
   return (
-    // A seção ocupa no MÍNIMO 100% da altura do painel direito
-    <section
-      id="home"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        minHeight: "100%",
-        position: "relative",
-      }}
-    >
-      {/* O componente de background deve vir antes do conteúdo principal
-          e ser posicionado absolutamente para ficar no fundo. */}
-      <BackgroundEffect />
+    <section className="d-flex flex-column justify-content-start align-self-left" id="home"style={{ display: "flex", minHeight: "100%", position: "relative" }}>
 
-      <Container
-        className="p-0 fade-in gradient-background"
-        style={{ position: "relative", zIndex: 10 }}
-      >
-        {" "}
+      <Container className=" p-0 fade-in gradient-background">
+        <div className="contain-content">
+          <p className="text-muted mb-1">Olá, eu sou</p>
+          <h1 style={{ fontSize: "3.5rem", fontWeight: "800", color: "#111" }}>
+            Caio Harrys
+          </h1>
+          <TypeAnimation
+            sequence={[
+              "Dev Full-Stack",
+              2000,
+              "Dev Python",
+              2000,
+              "Dev IA + LLM",
+              2000,
+            ]}
+            wrapper="h3"
+            speed={50}
+            style={{ fontSize: "2rem", color: "#555" }}
+            repeat={Infinity}
+          />
+          <Button
+            variant="primary"
+            size="lg"
+            className="mt-4"
+            href="#portfolio"
+          >
+            Meus Trabalhos
+          </Button>
+        </div>{" "}
         {/* Adicionado position: 'relative' e zIndex para o conteúdo ficar por cima */}
-        <p className="text-muted mb-1">Olá, eu sou</p>
-        <h1 style={{ fontSize: "3.5rem", fontWeight: "800", color: "#111" }}>
-          Caio Harrys
-        </h1>
-        <TypeAnimation
-          sequence={[
-            "Dev Full-Stack",
-            2000,
-            "Dev Python",
-            2000,
-            "Dev IA + LLM",
-            2000,
-          ]}
-          wrapper="h3"
-          speed={50}
-          style={{ fontSize: "2rem", color: "#555" }}
-          repeat={Infinity}
-        />
-        <Button variant="primary" size="lg" className="mt-4" href="#portfolio">
-          Meus Trabalhos
-        </Button>
       </Container>
+      
+      <BackgroundEffect />
     </section>
   );
 };
