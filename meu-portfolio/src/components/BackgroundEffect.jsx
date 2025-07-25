@@ -1,4 +1,3 @@
-// src/components/BackgroundEffect.js
 import React, { useEffect, useRef, useCallback } from 'react';
 import '../assets/css/BackgroundEffect.css'; // Importa o CSS
 
@@ -135,11 +134,6 @@ const BackgroundEffect = () => {
     // Função de limpeza para remover o event listener e timers das partículas do mouse
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
-      // Limpar todos os timers de partículas de mouse que ainda possam estar ativos
-      // (Isso é mais complexo, pois as partículas são criadas dinamicamente.
-      // Uma solução mais robusta seria manter um array de referências a elas ou usar um pool).
-      // Por simplicidade, para este exemplo, estamos apenas limpando o listener.
-      // Em uma aplicação real, você pode precisar de um Map ou Set para rastrear os timers das partículas de mouse.
     };
   }, []); // Sem dependências para este efeito, roda uma vez
 

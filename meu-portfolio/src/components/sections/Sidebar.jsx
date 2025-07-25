@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import profileImage from "../../assets/img/profile.jpg";
-import "../../assets/css/Sidebar.css"; // Certifique-se de que o caminho está correto
+import "../../assets/css/Sidebar.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
@@ -11,10 +11,8 @@ const blue = {
 };
 
 const Sidebar = () => {
-  // O container principal agora ocupa 100% da altura do painel pai
   return (
     <div className="sidebar-container text-center fade-in">
-      {/* ... o restante do seu código da sidebar ... */}
       <Image src={profileImage} roundedCircle className="profile-image" />
       <h3 className="mt-3 align-self-lg-start jost-font-name name-side-bar">
         <span className="blue-c">CAIO</span> HARRYS
