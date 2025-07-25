@@ -1,6 +1,10 @@
 .about-section {
-    padding-top: 40px; /* Mantemos apenas um padding no topo para separar da seção Home */
+    padding-top: 40px;
     background-color: #fff;
+  }
+
+  .main-content-container {
+    padding: 0 !important;
   }
   
   .section-title {
