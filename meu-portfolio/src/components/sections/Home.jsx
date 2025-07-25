@@ -3,8 +3,8 @@ import React from "react";
 import "../../assets/css/Home.css";
 import { Container, Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
-import BackgroundEffect from "../BackgroundEffect"; // Importa o novo componente de background
-import CardContainer from "../container-components/CardContainer.js";
+import BackgroundEffect from "../BackgroundEffect.jsx"; // Importa o novo componente de background
+import CardContainer from "../container-components/CardContainer.jsx";
 
 const Home = () => {
   return (

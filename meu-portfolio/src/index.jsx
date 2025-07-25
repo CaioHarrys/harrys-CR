@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from 'react-dom/client';
 import './assets/css/index.css'; // Certifique-se de que o caminho está correto
-import App from './App';
+import App from './App.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
