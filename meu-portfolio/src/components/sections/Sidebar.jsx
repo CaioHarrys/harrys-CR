@@ -19,7 +19,7 @@ const Sidebar = () => {
       <h3 className="mt-3 align-self-lg-start jost-font-name name-side-bar">
         <span className="blue-c">CAIO</span> HARRYS
       </h3>
-      <div className="Card-about jost-font">
+      <div className="Card-about jost-font-card">
         <p>
           Desenvolvedor <span className="blue-c">Full-Stack</span> apaixonado e
           especialista em criar interfaces profissionais e modernas. Sei
@@ -29,12 +29,12 @@ const Sidebar = () => {
         </p>
       </div>
       <div className="about-lista ">
-        <ul className="list-side-bar jost-font">
+        <ul className="list-side-bar jost-font-p">
           <li>
             <a href="#numero" className="social-icon">
-              <BsFillTelephoneFill size={22} style={blue} />
+              <BsFillTelephoneFill size={25} style={blue} />
             </a>
-            <p>(61) 99211-9889</p>
+            <p className="jost-font-t">(61) 99211-9889</p>
           </li>
           <li>
             <a href="#github" className="social-icon">
