@@ -24,7 +24,6 @@ function App() {
       {/* PAINEL DA DIREITA (CONTEÚDO PRINCIPAL) */}
       <div className="main-content-container fade-in">
         <Home />
-        {/* Futuras seções como Sobre, Portfólio, etc., virão aqui dentro */}
       </div>
     </div>
   );

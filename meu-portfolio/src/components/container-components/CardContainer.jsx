@@ -35,7 +35,6 @@ const CardContainer = () => {
             Meus Trabalhos
           </Button>
         </div>{" "}
-        {/* Adicionado position: 'relative' e zIndex para o conteúdo ficar por cima */}
       </Container>
   );
 };
