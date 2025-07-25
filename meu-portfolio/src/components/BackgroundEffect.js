@@ -1,6 +1,6 @@
 // src/components/BackgroundEffect.js
 import React, { useEffect, useRef, useCallback } from 'react';
-import './BackgroundEffect.css'; // Importa o CSS
+import '../assets/css/BackgroundEffect.css'; // Importa o CSS
 
 const BackgroundEffect = () => {
   const particlesContainerRef = useRef(null);
