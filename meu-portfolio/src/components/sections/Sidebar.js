@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import profileImage from "../assets/img/profile.jpg";
-import "../assets/css/Sidebar.css";
+import profileImage from "../../assets/img/profile.jpg";
+import "../../assets/css/Sidebar.css"; // Certifique-se de que o caminho está correto
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";

@@ -1,8 +1,12 @@
 .about-section {
-    padding-top: 40px; /* Mantemos apenas um padding no topo para separar da seção Home */
+    padding-top: 40px;
     background-color: #fff;
   }
-  
+
+  /* .main-content-container {
+    padding: 0 !important;
+  } */
+
   .section-title {
     text-align: center;
     padding-bottom: 30px;
@@ -32,6 +36,13 @@
   .section-title p {
     margin-bottom: 0;
     color: #666;
+  }
+  .home-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
   }
   
   .about-image-container {

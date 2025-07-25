@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './assets/css/index.css'; // Certifique-se de que o caminho está correto
 import App from './App';
 
 
