@@ -1,7 +1,7 @@
-import React from 'react';
-import Sidebar from './components/sections/Sidebar.jsx';
-import Home from './components/sections/Home.jsx';
-import './assets/css/App.css'; // Certifique-se de que o caminho está correto
+import React from "react";
+import Sidebar from "./components/sections/Sidebar.jsx";
+import Home from "./components/sections/Home.jsx";
+import "./assets/css/App.css"; // Certifique-se de que o caminho está correto
 
 function App() {
   return (
