@@ -26,6 +26,6 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 ## ✍️ Autoria e Agradecimentos
 
 -   **Autor do Projeto:**
-    -   **[Seu Nome Completo aqui]**
+    -   **Caio Harrys**
     -   **GitHub:** [@CaioHarrys](https://github.com/CaioHarrys)
     -   **LinkedIn:** [linkedin.com/in/caio-ferraz-a6662a216](https://www.linkedin.com/in/caio-ferraz-a6662a216)
