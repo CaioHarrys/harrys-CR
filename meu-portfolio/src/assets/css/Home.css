@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.jost-font {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .about-section {
   padding-top: 40px;
   background-color: #fff;
@@ -6,7 +15,11 @@
 /* .main-content-container {
     padding: 0 !important;
   } */
-
+.text-muted {
+  color: #666 !important;
+  font-size: 1em;
+  font-family: "Jost", sans-serif;
+}
 
 .contain-content {
   height: 100vh !important;

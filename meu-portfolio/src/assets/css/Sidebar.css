@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Centraliza todo o conteúdo da sidebar e a fixa */
 .sidebar-container {
     display: flex;
@@ -22,7 +23,7 @@
 .social-icons {
     width: 100%;
     margin: 0;
-    margin-top: 1.5em ;
+    margin-top: 1.5em;
     color: #555;
     /* Cor padrão dos ícones */
     transition: color 0.3s;
@@ -31,6 +32,7 @@
     flex-direction: row !important;
     gap: 5px;
 }
+
 .social-icons a {
     background-color: #eee !important;
     border-radius: 5px;
@@ -86,6 +88,7 @@
 ul {
     list-style-type: none;
 }
+
 .list-side-bar {
     display: flex;
     justify-content: space-evenly;
@@ -101,9 +104,11 @@ ul {
     /* Altera de 'baseline' para 'center' ou 'stretch' */
     /* 'stretch' é ideal para que os itens filhose preencham a altura do LI */
     /* 'center' vai centralizar verticalmente o ícone e o texto no LI, mas pode não esticar os fundos */
-    align-items: stretch; /* <-- MUDANÇA IMPORTANTE AQUI */
+    align-items: stretch;
+    /* <-- MUDANÇA IMPORTANTE AQUI */
     /* align-items: center; // Alternativa se preferir que os elementos se centralizem em vez de esticar o fundo */
-    text-align: center; /* Isso alinha o conteúdo dentro dos seus próprios elementos, não o LI */
+    text-align: center;
+    /* Isso alinha o conteúdo dentro dos seus próprios elementos, não o LI */
     margin-bottom: 0;
     gap: 10px;
 }
@@ -111,10 +116,14 @@ ul {
 .list-side-bar li a {
     border-radius: 5px;
     background-color: #eee;
-    padding: 7px; /* <-- MANTÉM ESTE VALOR */
-    display: flex; /* <-- Adiciona flex para centralizar o ícone se ele for menor que o padding */
-    align-items: center; /* <-- Centraliza o ícone verticalmente */
-    justify-content: center; /* <-- Centraliza o ícone horizontalmente */
+    padding: 7px;
+    /* <-- MANTÉM ESTE VALOR */
+    display: flex;
+    /* <-- Adiciona flex para centralizar o ícone se ele for menor que o padding */
+    align-items: center;
+    /* <-- Centraliza o ícone verticalmente */
+    justify-content: center;
+    /* <-- Centraliza o ícone horizontalmente */
 }
 
 .list-side-bar li p {
@@ -122,68 +131,79 @@ ul {
     background-color: #eee;
     color: #777;
     width: 100%;
-    padding: 7px; /* <-- MUDANÇA IMPORTANTE AQUI: AGORA É 7px */
+    padding: 7px;
+    /* <-- MUDANÇA IMPORTANTE AQUI: AGORA É 7px */
     text-align: start;
     /* height: fit-content !important; Remova isso. Com align-items: stretch, o flexbox se encarrega. */
 }
 
-ul{
+ul {
     margin: 0 !important;
     padding: 0 !important;
 }
-p{
+
+p {
     margin: 0px !important;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-h3{
+
+h3 {
     margin: 0px !important;
     padding: 0px !important;
 }
+
 .jost-font {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500 !important;
     font-style: normal;
     font-size: 1.1rem !important;
-  }
+}
+
 .jost-font-card {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500 !important;
-    font-style:normal;
+    font-style: normal;
     font-size: 1rem !important;
-  }
+}
+
 .jost-font-p {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500 !important;
     font-style: normal;
     font-size: 1rem !important;
-  }
+}
+
 .jost-font-t {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500 !important;
     font-style: normal;
     font-size: 0.94rem !important;
-  }
-.jost-font-name{
+}
+
+.jost-font-name {
     font-family: "Jost", sans-serif;
     font-size: 2rem;
     font-optical-sizing: auto;
     font-weight: 700 !important;
     font-style: normal;
-  }
-.fade-in{
+}
+
+.fade-in {
     animation: fadeIn 1s ease-in-out !important;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 100;
     }
