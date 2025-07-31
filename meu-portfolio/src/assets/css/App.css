@@ -21,14 +21,13 @@
   background-color: #eee;
   overflow: hidden;
   position: relative;
-  gap: 40px;
-  /* IMPORTANTE: O espaçamento entre os dois contêineres */
+  gap: 20px;
 }
 
 /* === ESTILO INDIVIDUAL DOS PAINÉIS === */
 .sidebar-container,
 .main-content-container {
-  max-height: 700px;
+  max-height: 750px;
   background-color: white;
   border-radius: 12px;
   border: 1px solid #e9e9e9;
@@ -39,10 +38,13 @@
 /* === PAINEL DA ESQUERDA (SIDEBAR) === */
 .sidebar-container {
   width: 100%;
-  max-width: 380px;
+  max-width: auto;
   padding: 40px;
   scrollbar-width: thin !important;
   scrollbar-color: #3452ff transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* === PAINEL DA DIREITA (CONTEÚDO) === */
@@ -56,7 +58,7 @@
   background-color: transparent;
   border: 0px;
   border-radius: 7px !important;
-  margin: 0 !important;
+  margin: 0 ;
   margin-left: 0 !important;
   scrollbar-width: thin;
   scrollbar-color: #3452ff transparent;
@@ -79,21 +81,21 @@
 /* === ANIMAÇÃO DE INTRODUÇÃO (A "CORTINA") === */
 /* ... (O restante do CSS para as animações continua o mesmo) ... */
 .intro-loader {
-  position: fixed;
+  position: absolute;
   top: -100vh;
   left: -110vh;
   width: 200%;
   height: 100%;
   background-color: #1374F2;
   z-index: 4;
-  animation: hideLoader 1s forwards ease-in-out !important;
+  animation: hideLoader 1s forwards ease-in !important;
   animation-delay: -0.1s;
   margin-left: 20px;
   transform: rotate(-45deg) !important;
 }
 
 .intro-loader-s {
-  position: fixed;
+  position: absolute;
   top: 100vh;
   left: -110vh;
   width: 100%;
@@ -107,7 +109,7 @@
 }
 
 .intro-loader-2 {
-  position: fixed;
+  position: absolute;
   top: -100vh;
   left: -100vh;
   width: 200%;
@@ -121,7 +123,7 @@
 }
 
 .intro-loader-2-s {
-  position: fixed;
+  position: absolute;
   top: 100vh;
   left: -100vh;
   width: 100%;
@@ -135,7 +137,7 @@
 }
 
 .intro-loader-3 {
-  position: fixed;
+  position: absolute;
   top: -100vh;
   left: -100vh;
   width: 200%;
@@ -149,7 +151,7 @@
 }
 
 .intro-loader-3-s {
-  position: fixed;
+  position: absolute;
   top: 100vh;
   left: -100vh;
   width: 100%;
