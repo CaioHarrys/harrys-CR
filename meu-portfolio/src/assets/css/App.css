@@ -21,7 +21,7 @@
   background-color: #eee;
   overflow: hidden;
   position: relative;
-  gap: 20px;
+  gap: 1.2em;
 }
 
 /* === ESTILO INDIVIDUAL DOS PAINÉIS === */
@@ -50,7 +50,6 @@
 /* === PAINEL DA DIREITA (CONTEÚDO) === */
 .main-content-container {
   display: flex !important;
-  width: 100% !important;
   height: 100vh;
   flex-direction: column;
   justify-content: space-around;

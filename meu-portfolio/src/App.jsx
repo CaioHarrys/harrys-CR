@@ -22,7 +22,7 @@ function App() {
       </div>
 
       {/* PAINEL DA DIREITA (CONTEÚDO PRINCIPAL) */}
-      <div className="main-content-container fade-in">
+      <div className="main-content-container fade-in col-8">
         <Home />
       </div>
     </div>

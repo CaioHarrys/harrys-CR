@@ -1,0 +1,61 @@
+.contain-content-bio {
+    position: relative;
+    height: auto !important;
+    background-color: white;
+    margin: 0 !important;
+    max-height: 750px !important;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column !important;
+    gap: 2em;
+    align-items: flex-start;
+    align-self: flex-start;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.Bio_Title {
+    font-family: "Jost", sans-serif;
+    font-weight: bolder;
+    border-bottom: blue 3.3px solid;
+    border-radius: 1px;
+}
+
+.Bio_Paragraph {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    color: #777;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Bio_Tags_Row {
+    display: flex;
+}
+
+.Bio_Tags {
+    display: flex;
+    font-family: "Jost", sans-serif;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin-right: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.Bio_Tags span {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 5px 25px;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: fit-content;
+}

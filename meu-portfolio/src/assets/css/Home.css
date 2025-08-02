@@ -47,7 +47,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: row !important;
-  gap: 2em;
+  gap: 1.2em;
   align-items: flex-start;
   align-self: flex-start;
 }
@@ -93,7 +93,8 @@
   color: rgba(244, 23, 23, 0.994);
 
 }
-.lines{
+
+.lines {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,27 +102,30 @@
   bottom: 0;
   z-index: -11;
 }
-.lines :nth-child(2){
+
+.lines :nth-child(2) {
   left: 52%;
   top: -30%;
 }
-.lines :nth-child(3){
+
+.lines :nth-child(3) {
   left: 66%;
   top: -33%;
 }
-.lines span{
+
+.lines span {
   width: 4px;
-    height: 160%;
-    display: block;
-    background: -moz-linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
-    background: -webkit-linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
-    background: linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3452ff",endColorstr="#d3a583",GradientType=1);
-    transform: rotate(30deg);
-    z-index: 11 !important;
-    position: absolute;
-    top: -28%;
-    left: 40%;
+  height: 160%;
+  display: block;
+  background: -moz-linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
+  background: -webkit-linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
+  background: linear-gradient(180deg, var(--mc) 50%, rgba(211, 165, 131, 1) 50%, rgba(211, 165, 131, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3452ff", endColorstr="#d3a583", GradientType=1);
+  transform: rotate(30deg);
+  z-index: 11 !important;
+  position: absolute;
+  top: -28%;
+  left: 40%;
 }
 
 .left_hero_header {
