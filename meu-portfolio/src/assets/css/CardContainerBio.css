@@ -11,17 +11,22 @@
     align-items: flex-start;
     align-self: flex-start;
     border-radius: 7px;
-    padding: 20px;
+    padding: 27px;
+
+    background-color: #fff;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 15%);
 }
 
-.Bio_Title {
+.Bio_Title h1 {
     font-family: "Jost", sans-serif;
-    font-weight: bolder;
-    border-bottom: blue 3.3px solid;
+    font-size: 1.5em !important;
+    font-weight: 500;
+    padding-bottom: 6px;
+    border-bottom: blue 2px solid;
     border-radius: 1px;
 }
 
-.Bio_Paragraph {
+.Bio_Paragraph p{
     font-family: "Jost", sans-serif;
     font-size: 20px;
     color: #777;

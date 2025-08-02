@@ -9,6 +9,9 @@
     margin: 0;
     border: none;
     overflow-y: auto;
+
+    background-color: #fff;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 15%);
 }
 
 /* Estilo da Imagem de Perfil */
@@ -166,15 +169,17 @@ h3 {
 .jost-font-card {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-style: normal;
     font-size: 1rem !important;
+    padding: 15px 20px 15px 15px;
+    color: #777;
 }
 
 .jost-font-p {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-style: normal;
     font-size: 1rem !important;
 }
@@ -182,7 +187,7 @@ h3 {
 .jost-font-t {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-style: normal;
     font-size: 0.94rem !important;
 }
