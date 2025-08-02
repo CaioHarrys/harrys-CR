@@ -1,0 +1,77 @@
+.Card-Formacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contain-content-formacao {
+    position: relative;
+    height: auto !important;
+    background-color: white;
+    margin: 0 !important;
+    max-height: auto !important;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column !important;
+    gap: 2em;
+    align-items: flex-start;
+    align-self: flex-start;
+    border-radius: 7px;
+    padding: 27px;
+
+    background-color: #fff;
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 15%);
+}
+.formacao-box{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.formacao-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 2em;
+    background-color: #eee;
+    border-radius: 7px;
+    position: relative;
+}
+.formacao-card::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+}
+.formacao-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    gap: 1.5em;
+}
+.formacao-title-h1{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.formacao-title h1{
+    font-family: "Jost", sans-serif;
+    font-size: 1.5em !important;
+    font-weight: 400;
+    color: black;
+    padding: 0 ;
+    margin: 0 ;
+    margin-bottom: 10px;
+}
+.formacao-title{
+    display: flex;
+    justify-content: center;
+    font-family: "Jost", sans-serif;
+    font-size: 1em !important;
+    font-weight: 400;
+    color: #777;
+    text-align: center !important;
+    margin-top: 2px !important;
+}
