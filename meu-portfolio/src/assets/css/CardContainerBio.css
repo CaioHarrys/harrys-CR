@@ -81,7 +81,7 @@
         margin-right: 10px;
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
     }
 }
