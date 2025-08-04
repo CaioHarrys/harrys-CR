@@ -16,7 +16,8 @@ function App() {
       {/* <div className="animated-shape shape1"></div>
       <div className="animated-shape shape2"></div> */}
 
-      {/* PAINEL DA ESQUERDA (SIDEBAR) */}
+      <div className="Content-site">
+        {/* PAINEL DA ESQUERDA (SIDEBAR) */}
       <div className="col-3">
         <Sidebar />
       </div>
@@ -25,6 +26,16 @@ function App() {
       <div className="main-content-container fade-in col-8">
         <Home />
       </div>
+      </div>
+      {/* PAINEL DA ESQUERDA (SIDEBAR) */}
+      {/* <div className="col-3">
+        <Sidebar />
+      </div> */}
+
+      {/* PAINEL DA DIREITA (CONTEÚDO PRINCIPAL) */}
+      {/* <div className="main-content-container fade-in col-8">
+        <Home />
+      </div> */}
     </div>
   );
 }
