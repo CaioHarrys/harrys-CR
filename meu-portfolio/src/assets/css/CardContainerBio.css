@@ -26,7 +26,7 @@
     border-radius: 1px;
 }
 
-.Bio_Paragraph p{
+.Bio_Paragraph p {
     font-family: "Jost", sans-serif;
     font-size: 20px;
     color: #777;
@@ -64,6 +64,24 @@
     white-space: nowrap;
     max-width: fit-content;
 }
-.container{
+
+.container {
     max-width: unset !important;
+}
+
+@media (max-width:480px) {
+    .Bio_Tags {
+        display: flex;
+        font-family: "Jost", sans-serif;
+        font-size: 16px;
+        color: #777;
+        line-height: 1.2;
+        font-weight: 600;
+        letter-spacing: normal;
+        margin-right: 10px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }
