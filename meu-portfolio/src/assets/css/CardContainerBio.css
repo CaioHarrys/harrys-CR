@@ -64,3 +64,6 @@
     white-space: nowrap;
     max-width: fit-content;
 }
+.container{
+    max-width: unset !important;
+}
