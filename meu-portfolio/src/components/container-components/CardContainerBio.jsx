@@ -11,6 +11,7 @@ const CardContainer = () => {
       <div className="contain-content-bio">
         <Titles text={"Biografia"}/>
         <div className="Bio_Paragraph">
+
           <p>
             Olá! Meu nome é Caio Ferraz da Cunha, um desenvolvedor web
             apaixonado por transformar ideias em soluções digitais inovadoras.
