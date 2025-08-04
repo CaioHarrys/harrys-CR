@@ -46,7 +46,6 @@
   max-height: 750px !important;
   overflow-x: hidden;
   display: flex;
-  flex-direction: row !important;
   gap: 1.2em;
   align-items: flex-start;
   align-self: flex-start;
@@ -242,4 +241,22 @@
   to {
     opacity: 100;
   }
+}
+
+@media (max-width:480px) {
+  .text-muted {
+    margin-top: 2em !important;
+    display: flex;
+    align-self: center;
+    color: #666 !important;
+    font-size: 2em;
+    font-family: "Jost", sans-serif;
+  }
+
+  .text-animated {
+    display: flex;
+    align-self: center;
+    font-weight: bold !important;
+  }
+
 }

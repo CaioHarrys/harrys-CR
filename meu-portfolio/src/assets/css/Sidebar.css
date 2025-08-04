@@ -213,3 +213,12 @@ h3 {
         opacity: 100;
     }
 }
+
+@media (max-width:480px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        align-self: center !important;
+    }
+}
