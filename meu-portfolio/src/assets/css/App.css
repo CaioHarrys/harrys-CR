@@ -55,16 +55,30 @@ p {
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .Content-site {
     flex-direction: column;
     align-items: stretch;
+  }
+  .col-3{
+    width: 100%;
+  }
+  .col-8{
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .Content-site {
     gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .col-3{
+    width: 100%;
+  }
+  .col-8{
+    width: 100% !important;
   }
 }
 
