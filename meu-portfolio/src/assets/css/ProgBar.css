@@ -1,24 +1,59 @@
-    /* Basic CSS for styling and animation */
-    .progress-bar-container {
-        width: 100%;
-        height: 20px;
-        background-color: #e0e0e0;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-      }
+/* Estilo para o container principal (o "trilho" onde a bola corre) */
+.progress-bar-container {
+  width: 100%;
+  height: fit-content; /* Altura fixa para o trilho */
+  background-color: #e0e0e0;
+  border-radius: 33px;
+  position: relative; /* Necessário para posicionar o título H1 */
   
-      .progress-bar-filler {
-        height: 100%;
-        background-color: #4caf50; /* Green progress */
-        transition: width 0.5s ease-in-out; /* Smooth animation */
-      }
+  /* Usando Flexbox para alinhar a bola */
+  display: flex;
+  align-items: center; /* Centraliza a bola verticalmente */
   
-      .progress-bar-percentage {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #333;
-        font-weight: bold;
-      }
+  /* Espaçamento para a bola não colar nas bordas */
+  /* O valor ideal é metade da largura/altura da bola */
+  padding: 0 7.5px;
+  
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  overflow: hidden; /* Esconde qualquer parte da bola que possa transbordar */
+}
+
+/* Estilo para o título (Ex: "React") */
+.progbar-h1 {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #1c1c1c;
+  
+  /* Posicionado de forma absoluta para não interferir no movimento da bola */
+  position: absolute;
+  left: 25px; /* Ajuste a posição conforme necessário */
+  z-index: 1; /* Garante que fique acima do fundo, mas abaixo da bola */
+}
+
+/* Estilo para a bola que se move */
+.progress-bar-ball {
+  height: 45px; /* Altura da bola */
+  width: 45px;  /* Largura da bola */
+  background-color: #3b0fdc; /* Cor da bola */
+  border-radius: 50px; /* Transforma o div em um círculo perfeito */
+  color: #ffffff; /* Cor do texto da porcentagem */
+  font-weight: 600;
+  font-size: 1em;
+  padding-left: 3em;
+  padding-right:3em ;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  flex-shrink: 0; /* Impede que a bola seja esmagada se o container for pequeno */
+
+  /* Centraliza o número da porcentagem dentro da bola */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* A MÁGICA DA ANIMAÇÃO: transição suave para a propriedade transform */
+  /* Qualquer mudança na posição via 'transform' será animada por 0.5s */
+  transition: transform 0.5s ease-in-out;
+  
+  z-index: 2; /* Garante que a bola fique na frente do título */
+}
