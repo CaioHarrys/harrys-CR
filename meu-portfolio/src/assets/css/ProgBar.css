@@ -1,59 +1,82 @@
-/* Estilo para o container principal (o "trilho" onde a bola corre) */
+/* The main container with the light grey background and shadow */
 .progress-bar-container {
   width: 100%;
-  height: fit-content; /* Altura fixa para o trilho */
-  background-color: #e0e0e0;
-  border-radius: 33px;
-  position: relative; /* Necessário para posicionar o título H1 */
-  
-  /* Usando Flexbox para alinhar a bola */
+  max-width: 600px; /* Example max-width */
+  height: 60px;
+  background-color: #f0f0f3;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden; /* Important for keeping the rounded corners */
   display: flex;
-  align-items: center; /* Centraliza a bola verticalmente */
-  
-  /* Espaçamento para a bola não colar nas bordas */
-  /* O valor ideal é metade da largura/altura da bola */
-  padding: 0 7.5px;
-  
-  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
-  overflow: hidden; /* Esconde qualquer parte da bola que possa transbordar */
+  align-items: center;
 }
 
-/* Estilo para o título (Ex: "React") */
-.progbar-h1 {
-  font-family: 'Jost', sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  color: #1c1c1c;
+/* The blue fill that grows based on the percentage */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #2c3e50; /* A dark, modern blue */
+  border-radius: 30px;
   
-  /* Posicionado de forma absoluta para não interferir no movimento da bola */
-  position: absolute;
-  left: 25px; /* Ajuste a posição conforme necessário */
-  z-index: 1; /* Garante que fique acima do fundo, mas abaixo da bola */
+  /* Smooth transition for the width change */
+  transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* For positioning the percentage text */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns text to the right */
 }
 
-/* Estilo para a bola que se move */
-.progress-bar-ball {
-  height: 45px; /* Altura da bola */
-  width: 45px;  /* Largura da bola */
-  background-color: #3b0fdc; /* Cor da bola */
-  border-radius: 50px; /* Transforma o div em um círculo perfeito */
-  color: #ffffff; /* Cor do texto da porcentagem */
+/* The percentage text style */
+.progress-bar-percentage {
+  color: white;
+  font-family: sans-serif;
   font-weight: 600;
   font-size: 1em;
-  padding-left: 3em;
-  padding-right:3em ;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  flex-shrink: 0; /* Impede que a bola seja esmagada se o container for pequeno */
+  padding-right: 45px; /* Padding to not overlap with the thumb */
+  
+  /* Fade-in animation for the text */
+  animation: fadeIn 0.5s ease;
+}
 
-  /* Centraliza o número da porcentagem dentro da bola */
+/* The white thumb indicator */
+.progress-bar-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border-radius: 50%; /* Makes it a perfect circle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+  /* Positioned absolutely to move along the container */
+  position: absolute;
+  top:40%;
+  left: -10px;
+  transform: translateY(-20%); /* Vertically centers the thumb */
+  
+  /* Smooth transition for the movement */
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* For centering the inner blue dot */
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  /* A MÁGICA DA ANIMAÇÃO: transição suave para a propriedade transform */
-  /* Qualquer mudança na posição via 'transform' será animada por 0.5s */
-  transition: transform 0.5s ease-in-out;
-  
-  z-index: 2; /* Garante que a bola fique na frente do título */
+/* The inner blue part of the thumb, creating the doughnut effect */
+.thumb-inner {
+  width: 2px;
+  height: 2px;
+  background-color: #2c3e50; /* Same color as the fill */
+  border-radius: 10px; /* Pill shape */
+}
+
+/* A simple fade-in animation for the percentage text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
