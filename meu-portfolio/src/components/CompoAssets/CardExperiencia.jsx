@@ -3,12 +3,12 @@ import "../../assets/css/Home.css";
 import "../../assets/css/CardContainerBio.css";
 import "../../assets/css/CardExperiencia.css";
 
-const CardsFormacao = () => {
+const CardExperiencia = () => {
   return (
     <div className="Card-Formacao">
       <div className="formacao-card">
         <div className="formacao-title">
-          <h1>UNICEUB</h1>
+          <h1>Invisual</h1>
           <span className="formacao-title">(2020 - 2024)</span>
         </div>
         <h1 className="formacao-title-h1">Segurança da Informação</h1>
@@ -21,7 +21,7 @@ const CardsFormacao = () => {
       </div>
       <div className="formacao-card">
         <div className="formacao-title">
-          <h1>SENAI</h1>
+          <h1>Kmon Vip</h1>
           <span className="formacao-title">(2020 - 2024)</span>
         </div>
         <h1 className="formacao-title-h1">Python e Inteligência Artificial</h1>
@@ -34,7 +34,7 @@ const CardsFormacao = () => {
       </div>
       <div className="formacao-card">
         <div className="formacao-title">
-          <h1>EBAC</h1>
+          <h1>Amparo RH</h1>
           <span className="formacao-title">(2020 - 2024)</span>
         </div>
         <h1 className="formacao-title-h1">Dev Full-Stack</h1>
@@ -48,4 +48,4 @@ const CardsFormacao = () => {
     </div>
   );
 };
-export default CardsFormacao;
+export default CardExperiencia;

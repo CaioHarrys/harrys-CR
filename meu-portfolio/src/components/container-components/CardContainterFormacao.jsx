@@ -3,20 +3,20 @@ import "../../assets/css/Home.css";
 import "../../assets/css/CardContainerBio.css";
 import "../../assets/css/CardExperiencia.css";
 import {Container} from "react-bootstrap";
-import Titles from "../../components/CompoAssets/Titles.jsx";
-import CardFormacao from "../../components/CompoAssets/CardFormacao.jsx";
+import Titles from "../CompoAssets/Titles.jsx";
+import CardsFormacao from "../CompoAssets/CardFormacao.jsx";
 
-const CardExperiencia = () => {
+const CardContainerFormacao = () => {
   return (
     <Container className="container">
       <div className="contain-content-formacao">
         <Titles text={"Formação Acadêmica"} />
         <div className="formacao-box">
-          <CardFormacao/>
+          <CardsFormacao/>
         </div>
       </div>{" "}
     </Container>
   );
 };
 
-export default CardExperiencia;
+export default CardContainerFormacao;
