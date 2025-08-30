@@ -74,7 +74,6 @@ const ProfessionalityCard = () => {
   );
 };
 
-// CSS inline (pode trocar pra Tailwind/SCSS se quiser)
 const styles = {
   card: {
     background: "#fff",

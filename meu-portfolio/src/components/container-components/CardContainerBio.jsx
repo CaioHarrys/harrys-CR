@@ -9,7 +9,7 @@ const CardContainer = () => {
   return (
     <Container className="container">
       <div className="contain-content-bio">
-        <Titles text={"Biografia"}/>
+        <Titles text={"Biografia"} />
         <div className="Bio_Paragraph">
 
           <p>
