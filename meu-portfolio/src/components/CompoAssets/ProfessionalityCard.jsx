@@ -76,7 +76,6 @@ const ProfessionalityCard = () => {
 
 const styles = {
   card: {
-    background: "#fff",
     width: "100%",
   },
   title: {

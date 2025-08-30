@@ -7,8 +7,9 @@
 
 > Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar minhas habilidades, projetos e trajetória profissional de uma forma moderna e interativa.
 
-<!-- ## 📸 Visão Geral
-![Screenshot do Projeto](./screenshot.png) -->
+## 📸 Visão Geral
+![Screenshot do Projeto](./PrintMock.png)
+
 
 ## 🚀 Tecnologias Utilizadas
 

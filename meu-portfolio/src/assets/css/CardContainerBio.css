@@ -14,7 +14,7 @@
     padding: 27px;
 
     background-color: #fff;
-    box-shadow: 0px 3px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0px 3px 4px rgb(0 0 0 / 15%) !important;
 }
 
 .Bio_Title h1 {
