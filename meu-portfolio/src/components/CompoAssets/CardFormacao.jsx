@@ -12,7 +12,7 @@ const CardsFormacao = () => {
           <span className="formacao-title">(07/07/2021 - 24/02/2025)</span>
         </div>
         <h1 className="formacao-title-h1">Segurança da Informação</h1>
-        <p>
+        <p className="formacao-title-p">
           {" "}
           Como profissional em Segurança da Informação, possuo competência na
           perícia de crimes digitais, com foco na investigação de incidentes e
@@ -32,7 +32,7 @@ const CardsFormacao = () => {
           <span className="formacao-title">(07/04/2025 - 03/07/2025)</span>
         </div>
         <h1 className="formacao-title-h1">Python e Inteligência Artificial</h1>
-        <p>
+        <p className="formacao-title-p">
           {" "}
           Em meu curso de Python e Inteligência Artificial, obtive uma
           compreensão sólida e prática. Aprendi a manipular e analisar dados
@@ -51,7 +51,7 @@ const CardsFormacao = () => {
           <span className="formacao-title">(08/10/2019 - 26/06/2021)</span>
         </div>
         <h1 className="formacao-title-h1">Dev Full-Stack</h1>
-        <p>
+        <p className="formacao-title-p">
           {" "}
           No curso de Desenvolvimento Fullstack na EBAC, adquiri uma visão
           completa da construção de sistemas, desde a interface até o banco de

@@ -5,6 +5,7 @@ import "../../assets/css/Sidebar.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoMail } from "react-icons/io5";
+import "../../assets/css/CardExperiencia.css";
 
 const blue = {
   color: "#007bff",
@@ -18,8 +19,8 @@ const Sidebar = () => {
         <span className="blue-c">CAIO</span> HARRYS
       </h3>
       <div className="Card-about jost-font-card">
-        <p>
-          Desenvolvedor <span className="blue-c">Full-Stack</span> apaixonado e
+        <p className="sidebox-p">
+          Desenvolvedor <span className="blue-c"> Full-Stack</span> apaixonado e
           especialista em criar interfaces profissionais e modernas. Sei
           programar IAs utilizando Python+Venv para analise de dados, chatbots,
           treinamento de IA. Disponível para trabalhos como freelancer, CLT e ou
