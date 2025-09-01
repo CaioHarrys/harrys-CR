@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
 const skills = [
-  { name: "Adobe Photoshop", value: 90 },
+  { name: "React", value: 80 },
+  { name: "IA", value: 65 },
+  { name: "Python", value: 85 },
   { name: "HTML5 & CSS3", value: 95 },
-  { name: "WordPress", value: 80 },
-  { name: "Adobe Illustrator", value: 85 },
+  { name: "LLM", value: 65 },
 ];
 
 const ProfessionalityCard = () => {

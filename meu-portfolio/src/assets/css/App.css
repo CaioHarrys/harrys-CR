@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+body {
+  height: auto !important;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -67,11 +72,29 @@ p {
 }
 
 @media (max-width: 480px) {
-  .sidebar-container{
+  .main-content-container {
+    max-height: unset !important;
+    display: flex !important;
+    width: 100% !important;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 7px !important;
+    margin: 0;
+    margin-left: 0 !important;
+    scrollbar-width: thin;
+    scrollbar-color: #3452ff transparent;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .sidebar-container {
     width: 100% !important;
     max-height: unset !important;
     max-width: unset !important;
   }
+
   .Content-site {
     gap: 10px;
     flex-direction: column;
@@ -89,6 +112,7 @@ p {
   .row {
     gap: 20px !important;
   }
+
   .contain-content {
     display: flex;
     flex-direction: column !important;
