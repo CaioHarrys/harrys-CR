@@ -11,14 +11,17 @@ const CardContainer = () => {
       <div className="contain-content-bio">
         <Titles text={"Biografia"} />
         <div className="Bio_Paragraph">
-
           <p>
-            Olá! Meu nome é Caio Ferraz da Cunha, um desenvolvedor web
-            apaixonado por transformar ideias em soluções digitais inovadoras.
-            Com experiência em tecnologias modernas de front-end e back-end, eu
-            me dedico a construir interfaces intuitivas e sistemas robustos.
-            Estou sempre em busca de novos desafios para aprimorar minhas
-            habilidades e contribuir com projetos significativos.
+            Desenvolvedor com 2 anos de experiência na prática, movido por
+            desafios e pela próxima linha de código. Formado em Segurança da
+            Informação – o que me dá uma visão diferenciada sobre arquitetura e
+            resiliência de sistemas. Meu core está no Fullstack e em dar vida a
+            interfaces robustas com React, mas sou um entusiasta de fronteiras:
+            integro APIs de forma eficiente e mergulho no universo de IA/LLM e
+            Python para construir soluções mais inteligentes. Procuro uma
+            oportunidade de crescimento real em um time de alta performance. Meu
+            foco agora é adquirir mais conteúdo, evoluir a fundo e solidificar
+            minha carreira profissional.
           </p>
         </div>
         <div className="Bio_Tags_Row">
